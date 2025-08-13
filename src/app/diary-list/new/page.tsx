@@ -6,9 +6,10 @@ export default function NewDiary() {
   // 일기 내용 상태값
   const [content, setContent] = useState("");
   const onClickToConfirm = () => {
-    console.log(content);
+    window.alert(content);
   };
   const handleChangeHeight = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setContent(e.target.value);
     const el = e.currentTarget;
     el.style.height = "auto";
     el.style.height = `${el.scrollHeight}px`;
