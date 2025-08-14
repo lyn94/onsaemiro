@@ -1,5 +1,6 @@
 "use client";
 
+import Modal from "@/app/components/Modal/Modal";
 import { useState } from "react";
 
 export default function NewDiary() {
@@ -29,6 +30,7 @@ export default function NewDiary() {
       >
         내용 확인하기
       </button>
+      <Modal />
     </div>
   );
 }
